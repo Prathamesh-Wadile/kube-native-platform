@@ -1,0 +1,7 @@
+﻿.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+node_modules/
+.env
+__pycache__/
