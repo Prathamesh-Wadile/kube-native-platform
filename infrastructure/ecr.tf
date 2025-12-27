@@ -12,7 +12,7 @@ module "ecr" {
   for_each = toset(local.services)
 
   repository_name = "${local.name}-${each.key}"
-
+  repository_force_delete = true
   # Security: Scan images for vulnerabilities when they are pushed
   repository_image_scan_on_push = true
   
